@@ -1,0 +1,76 @@
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler {
+    background-color: grey;
+    border: solid 1px blue;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: blue;
+}
+
+h1, h2 {
+    color: white;
+}
+
+/*Cards*/
+.padre-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Desktop grande*/
+@media (min-width: 1200px) {
+    .padre-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/*Carrusel*/
+#carouselExampleIndicators {
+    width: 500px;
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+/*Flechas del carrusel*/
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+}
