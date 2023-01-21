@@ -10,6 +10,11 @@ body {
 
 .nav-link {
     color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: blue;
 }
 
 .navbar-nav .nav-link.active {
